@@ -14,6 +14,9 @@ exports.module = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  server: {
+    port: 8085
+  },
   // serverMiddleware: [
   //   { path: "/api", handler: "~/server-middleware/rest.js" },
   // ],
