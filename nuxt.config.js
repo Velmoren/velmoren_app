@@ -19,6 +19,7 @@ module.exports = {
     port: 8085
   },
   telemetry: true,
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -44,8 +45,14 @@ module.exports = {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-
+  bootstrapVue: {
+    icons: true
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
+
   build: {
-  }
+    babel: {
+      compact: true
+    }
+  },
 }
