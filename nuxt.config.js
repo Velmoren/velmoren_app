@@ -18,9 +18,6 @@ module.exports = {
     host: '78.155.208.62',
     port: 8085
   },
-  // serverMiddleware: [
-  //   { path: "/api", handler: "~/server-middleware/rest.js" },
-  // ],
   telemetry: true,
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
