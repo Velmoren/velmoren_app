@@ -14,9 +14,10 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  dev: process.env.NODE_ENV !== "production",
   server: {
-    host: '78.155.208.62',
-    port: 8085
+    host: process.env.NODE_ENV !== "production" ? 'localhost' : '78.155.208.62',
+    port: process.env.NODE_ENV !== "production" ? 3000 : 8085
   },
   telemetry: true,
 
