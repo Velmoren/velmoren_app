@@ -1,0 +1,23 @@
+{
+  "name": "velmoren_app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server/index.js",
+    "build": "nuxt build",
+    "start": "node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.9.1",
+    "express": "^4.17.1",
+    "nuxt": "^2.15.3"
+  },
+  "devDependencies": {
+    "consola": "^2.15.3",
+    "cors": "^2.8.5"
+  }
+}
