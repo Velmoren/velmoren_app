@@ -15,7 +15,7 @@ module.exports = {
     ]
   },
   server: {
-    host: 'http://78.155.208.62',
+    host: '78.155.208.62',
     port: 8085
   },
   // serverMiddleware: [
