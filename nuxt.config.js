@@ -1,4 +1,4 @@
-exports.module = {
+module.exports = {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'velmoren_app',
@@ -15,6 +15,7 @@ exports.module = {
     ]
   },
   server: {
+    host: 'http://78.155.208.62',
     port: 8085
   },
   // serverMiddleware: [
