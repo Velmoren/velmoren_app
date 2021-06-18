@@ -1,6 +1,6 @@
 <template>
   <div>
-    Главная
+    Каталог
   </div>
 </template>
 

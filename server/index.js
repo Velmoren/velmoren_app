@@ -30,5 +30,6 @@ async function start() {
   })
 }
 
-console.log(config.dev)
 start().then()
+
+module.exports = app

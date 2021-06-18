@@ -17,14 +17,21 @@ module.exports = {
   dev: process.env.NODE_ENV !== "production",
   server: {
     host: process.env.NODE_ENV !== "production" ? 'localhost' : '78.155.208.62',
-    port: process.env.NODE_ENV !== "production" ? 3000 : 8085
+    port: process.env.NODE_ENV !== "production" ? 3001 : 8085
   },
   telemetry: true,
-
+  serverMiddleware: [
+    { path: "/api", handler: "~/server-middleware/rest.js" },
+  ],
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "@/assets/scss/main.scss"
   ],
-
+  styleResources: {
+    scss: [
+      '~/assets/scss/_vars.scss'
+    ],
+  },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
@@ -42,6 +49,7 @@ module.exports = {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    ['cookie-universal-nuxt', { alias: 'cookiz' }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

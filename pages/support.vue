@@ -1,6 +1,6 @@
 <template>
   <div>
-    Главная
+    Поддержка
   </div>
 </template>
 
