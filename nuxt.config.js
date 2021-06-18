@@ -19,6 +19,7 @@ module.exports = {
     host: process.env.NODE_ENV !== "production" ? 'localhost' : '78.155.208.62',
     port: process.env.NODE_ENV !== "production" ? 3001 : 8085
   },
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     baseURL:
       process.env.NODE_ENV !== "production"
@@ -58,8 +59,6 @@ module.exports = {
     ['cookie-universal-nuxt', { alias: 'cookiz' }]
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
   bootstrapVue: {
     icons: true
   },
