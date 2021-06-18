@@ -6,7 +6,7 @@
     "dev": "cross-env NODE_ENV=dev nodemon server/index.js",
     "build": "nuxt build",
     "start": "NODE_ENV=production node server/index.js",
-    "pm2-start": "NODE_ENV=production pm2 node server/index.js",
+    "pm2-start": "NODE_ENV=production pm2 start server/index.js",
     "pm2-monitor": "pm2 monit",
     "pm2-stop": "pm2 stop server/index.js",
     "pm2-restart": "pm2 restart server/index.js",
