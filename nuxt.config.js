@@ -19,6 +19,12 @@ module.exports = {
     host: process.env.NODE_ENV !== "production" ? 'localhost' : '78.155.208.62',
     port: process.env.NODE_ENV !== "production" ? 3001 : 8085
   },
+  axios: {
+    baseURL:
+      process.env.NODE_ENV !== "production"
+        ? "http://127.0.0.1:3001/"
+        : "http://78.155.208.62:8085/"
+  },
   telemetry: true,
   serverMiddleware: [
     { path: "/api", handler: "~/server-middleware/rest.js" },
